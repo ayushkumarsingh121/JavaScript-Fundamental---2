@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>
+      Complex Logic: Write a function evaluateConditions(a, b, c) that uses
+      logical operators to evaluate the following conditions and return a
+      string: "a is positive and b is negative", "b is zero or c is not a
+      number", "a is not equal to b or c is greater than 10".
+    </h1>
+  </body>
+  <script>
+    let evaluateConditions = (a, b, c) => {
+      if (a > 0 && b < 0){
+        console.log("a is positive and b is negative");
+      } 
+      else if (b === 0 || isNaN(c)){
+        console.log("b is zero or c is not a number");
+      } 
+      else if (a !== b || c > 10){
+        console.log("a is not equal to b or c is greater than 10");
+      }
+    };
+
+    evaluateConditions(10, 25, 12)
+    evaluateConditions(20, 20, 20)
+    evaluateConditions(1, 2, 1)
+  </script>
+</html>

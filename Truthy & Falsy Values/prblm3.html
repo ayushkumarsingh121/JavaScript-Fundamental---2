@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Q3 :- Filter Truthy Values: Write a function filterFalsyValues(arr) that takes an array with a mix of truthy and
+    falsy values and returns a new array containing only the truthy values. Test this function with different arrays to
+    ensure it works correctly.</h1>
+</body>
+<script>
+
+  let arr = [0, 1, "", "Ayush", undefined, null, true, false]
+
+  let filterFalsyValue = (arr) => {
+    let newArr = []
+    for (let i = 0; i < arr.length; i++) {
+      if (!!arr[i]) {
+        newArr.push(arr[i])
+      }
+    }
+    return newArr;
+  }
+  console.log(filterFalsyValue(arr))
+</script>
+
+</html>

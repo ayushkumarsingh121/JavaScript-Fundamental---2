@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Eligibility Check: Create a function isEligible(age, hasPermission) that uses logical operators to determine if someone is eligible based on their age (must be 18 or older) and whether they have permission.</h1>
+</body>
+<script>
+  let isEligible = (age, hasPermission) => { 
+    if(age >= 18 && hasPermission){
+      console.log("Yes")
+    } 
+    else {
+      console.log("No")
+    }
+  } 
+  isEligible(21, true)
+  isEligible(21, false)
+  isEligible(15, true)
+</script>
+</html>

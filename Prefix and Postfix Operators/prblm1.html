@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Prefix vs. Postfix: Write a function prefixPostfixDemo() that demonstrates the difference between prefix (++a) and
+    postfix (a++) increment operators by logging the value of a variable before and after incrementing it in both ways.
+  </h1>
+</body>
+<script>
+  let prefixPostfixDemo = () => {
+    let a = 5;
+
+    console.log("Initial value of a:", a);
+
+    // Postfix increment
+    console.log("Value of a++:", a++);
+    console.log("Value of a after a++:", a);
+
+    // Resetting a for prefix demonstration
+    a = 5;
+
+    // Prefix increment
+    console.log("Value of ++a:", ++a);
+    console.log("Value of a after ++a:", a);
+  }
+
+  prefixPostfixDemo();
+</script>
+
+</html>

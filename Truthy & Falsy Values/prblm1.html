@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Q1 :- Check Truthiness: Write a function isTruthy(value) that returns true if the value is truthy and false if it is falsy. Test this function with the values 0, 1, "", "hello", [], and null.</h1>
+</body>
+<script>
+  let isTruthy = (value) =>{
+    if(!!value){
+      console.log("true")
+    }
+    else{
+      console.log("false")
+    }
+  }
+
+  isTruthy(0)
+  isTruthy(1)
+  isTruthy("")
+  isTruthy("hello")
+  isTruthy([])
+  isTruthy(null)
+</script>
+</html>

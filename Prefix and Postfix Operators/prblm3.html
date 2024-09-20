@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Complex Prefix/Postfix Operations: Write a function complexOperation(a, b) that performs a series of prefix and postfix operations on a and b and calculates the final result based on the sequence of operations. Log the intermediate results to illustrate the effect of each operation.</h1>
+</body>
+<script>
+  function complexOperation(a, b) {
+    console.log("Initial values - a:", a, "b:", b);
+
+    let result1 = a++ + ++b;
+    console.log("After a++ + ++b - a:", a, "b:", b, "result1:", result1);
+
+    let result2 = ++a + b++;
+    console.log("After ++a + b++ - a:", a, "b:", b, "result2:", result2);
+
+    let result3 = a++ + b++;
+    console.log("After a++ + b++ - a:", a, "b:", b, "result3:", result3);
+
+    let finalResult = result1 + result2 + result3;
+    console.log("Final result:", finalResult);
+
+    return finalResult;
+}
+
+complexOperation(5, 5);
+
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>
+    Discount Calculation: Write a function calculateDiscount(price, isMember) that uses conditional statements to apply a discount based on whether the customer is a member (e.g., 10% discount for members, no discount for non-members).
+  </h1>
+</body>
+<script>
+  let calculateDiscount = (price, isMember) => {
+    if(isMember){
+      price = price - (price * 0.10)
+    }
+    return price
+  }
+  console.log(calculateDiscount(100, true))
+  console.log(calculateDiscount(1000, true))
+  console.log(calculateDiscount(100, false))
+</script>
+</html>

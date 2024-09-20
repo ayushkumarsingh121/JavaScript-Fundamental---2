@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>
+    Basic Arithmetic: Create a function performArithmetic(a, b) that performs
+    addition, subtraction, multiplication, and division on two numbers and
+    returns an object with the results.
+  </h1>
+</body>
+<script>
+  let performArithmetic = (a, b) => {
+    let result = {
+      addition: a + b,
+      subtraction: a - b,
+      multiplication: a * b,
+      division: a / b
+    }
+    return result;
+  }
+  console.log(performArithmetic(10,2))
+</script>
+
+</html>

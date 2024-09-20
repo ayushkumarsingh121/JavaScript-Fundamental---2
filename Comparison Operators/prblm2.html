@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Comparison Table: Create a script that compares a list of numbers with a given value using the operators >, <, >=, <=. Output the results in a readable format.</h1>
+</body>
+<script>
+let numbers = [7, 15, 2, 20, 9];
+let givenValue = 10;
+
+let compareNumbers = (numbers, givenValue) => {
+  for(let i = 0; i < numbers.length; i++) {
+    let num = numbers[i];
+    
+    // Output each comparison result in a simple format
+    console.log(`${num} > ${givenValue}: ${num > givenValue}`);
+    console.log(`${num} < ${givenValue}: ${num < givenValue}`);
+    console.log(`${num} >= ${givenValue}: ${num >= givenValue}`);
+    console.log(`${num} <= ${givenValue}: ${num <= givenValue}`);
+    console.log('-------------------');  // Separate output for clarity
+  }
+}
+ 
+// Call the function
+compareNumbers(numbers, givenValue);
+
+</script>
+</html>

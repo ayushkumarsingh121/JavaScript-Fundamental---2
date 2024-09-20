@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Q2 :- Falsy Values Count: Create an array with a mix of truthy and falsy values. Write a function countFalsyValues(arr) that returns the count of falsy values in the array.</h1>
+</body>
+<script>
+  let arr = [0, 1, "ayush", null, undefined, true, false] 
+
+  let countFalsyValues = (arr) => {
+    let count = 0
+    for(let i=0; i<arr.length; i++){
+      if(!arr[i]){
+      count++
+    }
+  }
+  console.log(count)
+  }
+  countFalsyValues(arr)
+</script>
+</html>

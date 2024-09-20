@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Complex Relational Logic: Write a function evaluateCondition(a, b, c) that uses relational operators to evaluate and return a string based on the conditions: "a is the largest", "b is between a and c", or "c is less than a and b".</h1>
+</body>
+<script>
+  const evaluateCondition = (a, b, c) => {
+  if (a > b && a > c) {
+    console.log("a is the largest");
+  } else if (b > a && b < c) {
+    console.log("b is between a and c");
+  } else if (c < a && c < b) {
+    console.log("c is less than a and b");
+  } else {
+    console.log("Conditions not met");
+  }
+}
+evaluateCondition(10, 5, 8);  
+evaluateCondition(5, 10, 15);  
+evaluateCondition(3, 5, 2);   
+evaluateCondition(5, 5, 5);    
+
+</script>
+</html>
